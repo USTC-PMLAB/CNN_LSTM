@@ -100,7 +100,7 @@ model.summary()
 history = model.fit(x=X_train, y=y_train, batch_size=100, epochs=60,
                     verbose=2, validation_data=(X_test, y_test),
                     shuffle=True, initial_epoch=0)
-model.save("h5forder/cnn2_lstm_high_1011_60epoch.h5")
+model.save("h5forder/cnn_lstm_high_80epoch.h5")
 
 y_pre = model.predict(X_test)
 label_pre = np.argmax(y_pre, axis=1)
